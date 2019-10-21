@@ -4,7 +4,11 @@
 int main () {
 
   Parser p {};
-  auto result = p.evaluate("((7*3)/4+6*(3^2)/2)");
+
+  std::string equation;
+  std::cin >> equation;
+// Falta procesar variables
+  auto result = p.evaluate(equation);
 
   std::cout << "Result: " << result << '\n';
 
